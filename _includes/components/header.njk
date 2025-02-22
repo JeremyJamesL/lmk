@@ -1,0 +1,30 @@
+{% set items=[{title: "+ Styling", url: "work", children: [{title: "Interiors", url:"interiors"}, {title: "Still Life", url:"still-life"}, {title: "Kids", url:"kids"}]}, {title: "About", url: "about"}, {title: "Contact", url: "contact"}] %}
+
+{% if style == "normal" %}
+    {% set fontColour = "black" %}
+    {% set headerPos = "relative" %}
+
+{% elif style == "full" %}
+    {% set fontColour = "white" %}
+    {% set headerPos = "absolute" %}
+{% endif %}
+
+<header class="{{ headerPos }} left-0 top-0 w-full flex p-5 justify-between text-{{ fontColour }}">
+    <a href="/" class="text-2xl tracking-[9px] font-raleway uppercase">Lisa McKinney</a>
+   <ul class="list-none flex gap-2">
+    {% for item in items %}
+        <li class="relative font-raleway uppercase text-lg group">
+            <a href="/{{ item.url }}" class="block py-2 px-4">{{ item.title }}</a>    
+            {% if "children" in item %}
+                <ul class="absolute left-0 hidden w-48 bg-white shadow-lg rounded-lg p-2 group-hover:flex flex-col gap-2">
+                    {% for subItem in item.children %}
+                        <li>
+                            <a href="/work/{{ subItem.url }}" class="block px-4 py-2 text-sm text-gray-500 hover:bg-gray-100 rounded-md">{{ subItem.title }}</a>
+                        </li>
+                    {% endfor %}
+                </ul>
+            {% endif %}
+        </li>
+    {% endfor %}
+</ul>
+</header>

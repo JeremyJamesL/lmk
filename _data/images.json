@@ -1,0 +1,44 @@
+{
+  "interiors": [
+    { "path": "/assets/interiors/interior-1.jpg", "alt": "Interior 1" },
+    { "path": "/assets/interiors/interior-2.jpg", "alt": "Interior 2" },
+    { "path": "/assets/interiors/interior-3.jpg", "alt": "Interior 3" },
+    { "path": "/assets/interiors/interior-4.jpg", "alt": "Interior 4" },
+    { "path": "/assets/interiors/interior-5.jpg", "alt": "Interior 5" },
+    { "path": "/assets/interiors/interior-6.jpg", "alt": "Interior 6" },
+    { "path": "/assets/interiors/interior-7.jpg", "alt": "Interior 7" },
+    { "path": "/assets/interiors/interior-8.jpg", "alt": "Interior 8" },
+    { "path": "/assets/interiors/interior-9.jpg", "alt": "Interior 9" },
+    { "path": "/assets/interiors/interior-10.jpg", "alt": "Interior 10" },
+    { "path": "/assets/interiors/interior-11.jpg", "alt": "Interior 11" },
+    { "path": "/assets/interiors/interior-12.jpg", "alt": "Interior 12" },
+    { "path": "/assets/interiors/interior-13.jpg", "alt": "Interior 13" },
+    { "path": "/assets/interiors/interior-14.jpg", "alt": "Interior 14" },
+    { "path": "/assets/interiors/interior-15.jpg", "alt": "Interior 15" },
+    { "path": "/assets/interiors/interior-16.jpg", "alt": "Interior 16" },
+    { "path": "/assets/interiors/interior-17.jpg", "alt": "Interior 17" },
+    { "path": "/assets/interiors/interior-18.jpg", "alt": "Interior 18" }
+  ],
+  "kids": [
+    { "path": "/assets/kids/kids-1.jpg", "alt": "Kids 1" },
+    { "path": "/assets/kids/kids-2.jpg", "alt": "Kids 2" },
+    { "path": "/assets/kids/kids-3.jpg", "alt": "Kids 3" },
+    { "path": "/assets/kids/kids-4.jpg", "alt": "Kids 4" },
+    { "path": "/assets/kids/kids-5.jpg", "alt": "Kids 5" }
+  ],
+  "stillLife": [
+    { "path": "/assets/still/still-life-13.jpg", "alt": "Still Life 13" },
+    { "path": "/assets/still/still-life-14.jpg", "alt": "Still Life 14" },
+    { "path": "/assets/still/still-life-15.jpg", "alt": "Still Life 15" },
+    { "path": "/assets/still/still-life-16.jpg", "alt": "Still Life 16" },
+    { "path": "/assets/still/still-life-17.jpg", "alt": "Still Life 17" },
+    { "path": "/assets/still/still-life-18.jpg", "alt": "Still Life 18" },
+    { "path": "/assets/still/still-life-19.jpg", "alt": "Still Life 19" },
+    { "path": "/assets/still/still-life-20.jpg", "alt": "Still Life 20" },
+    { "path": "/assets/still/still-life-21.jpg", "alt": "Still Life 21" },
+    { "path": "/assets/still/still-life-22.jpg", "alt": "Still Life 22" },
+    { "path": "/assets/still/still-life-23.jpg", "alt": "Still Life 23" },
+    { "path": "/assets/still/still-life-24.jpg", "alt": "Still Life 24" },
+    { "path": "/assets/still/still-life-25.jpg", "alt": "Still Life 25" }
+  ]
+}

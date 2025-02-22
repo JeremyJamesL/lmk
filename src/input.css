@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+@theme {
+  --font-raleway: "Raleway", serif;
+}
+
+html,
+body {
+  height: 100%;
+}
