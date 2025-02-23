@@ -10,6 +10,7 @@ document.getElementById("hamburger").addEventListener("click", () => {
     mobileMenu.classList.replace("flex", "hidden");
   }
 
+  // Change colour
   if (header.classList.contains("text-white")) {
     hamburgerLayers.forEach((el) => el.classList.toggle("bg-black!"));
   }
