@@ -10,17 +10,16 @@
 {% endif %}
 
 <header class="{{ headerPos }} left-0 top-0 w-full flex h-20 px-5 items-center justify-between text-{{ fontColour }}">
-   <a href="/" class="text-2xl tracking-[9px] font-raleway uppercase">Lisa McKinney</a>
-    <input type="checkbox" class="peer hidden" id="menu-toggle">
-    <label class="flex flex-col gap-1 cursor-pointer md:hidden z-100 peer-checked:[&>div]:bg-black" for="menu-toggle">
-        <div class="w-6 h-0.5 bg-{{ fontColour }}"></div>
-        <div class="w-6 h-0.5 bg-{{ fontColour }}"></div>
-        <div class="w-6 h-0.5 bg-{{ fontColour }}"></div> 
-    </label>
+   <a href="/" class="text-lg md:text-2xl tracking-[9px] font-raleway uppercase">Lisa McKinney</a>
+    {# <input type="checkbox" class="peer hidden" id="menu-toggle"> #}
+    <div class="flex flex-col gap-1 cursor-pointer md:hidden z-100" id="hamburger" >
+        <div class="w-6 h-0.5 bg-{{ fontColour }} hamburger-layer"></div>
+        <div class="w-6 h-0.5 bg-{{ fontColour }} hamburger-layer"></div>
+        <div class="w-6 h-0.5 bg-{{ fontColour }} hamburger-layer"></div> 
+    </div>
   
-
    <!-- Main menu -->
-   <ul class="list-none gap-2 hidden md:flex">
+   <ul class="list-none gap-2 hidden md:flex ">
     {% for item in items %}
         <li class="relative font-raleway uppercase text-lg group">
             <a href="/{{ item.url }}" class="block py-2 px-4">{{ item.title }}</a>    
@@ -38,7 +37,7 @@
     </ul>
 
      <!-- Mobile menu -->
-   <ul class="list-none p-5 gap-2 hidden peer-checked:flex flex-col fixed w-full h-full left-0 top-0 bg-white text-black z-10">
+   <ul class="list-none p-5 gap-2 hidden flex-col fixed w-full h-full left-0 top-0 bg-white text-black z-10" id="mobile-menu">
     {% for item in items %}
         <li class="relative font-raleway uppercase text-lg group">
             <a href="/{{ item.url }}" class="block py-2 px-4">{{ item.title }}</a>    

@@ -4,7 +4,10 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx @11ty/eleventy  --serve",
+    "build": "npx @11ty/eleventy",
+    "tailwind": "npx tailwindcss -i ./src/input.css -o ./dist/style.css --watch"
   },
   "keywords": [],
   "author": "",
@@ -13,7 +16,8 @@
   "dependencies": {
     "@11ty/eleventy": "^3.0.0",
     "@11ty/eleventy-img": "^6.0.1",
-    "@tailwindcss/cli": "^4.0.8"
+    "@tailwindcss/cli": "^4.0.8",
+    "eleventy-plugin-seo": "^0.5.2"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.20",
