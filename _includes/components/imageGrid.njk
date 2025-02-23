@@ -1,6 +1,6 @@
-<div class="grid grid-cols-3 auto-rows-[minmax(0,50dvh)]">
+{# <div class="grid grid-cols-3 auto-rows-[minmax(0,50dvh)]"> #}
+<div class="grid md:grid-cols-3 h-screen" style="grid-template-rows: calc(50vh - 40px) calc(50vh - 40px); grid-auto-rows: 50vh;">
     {% for image in images[folder] %}
-    
     <a data-fslightbox="first-lightbox" href="{{ image.path }}" ><img src="{{ image.path }}" alt="{{ image.alt }}" class="w-full h-full object-cover object-center block"></a>
     {% endfor %}
 </div>
